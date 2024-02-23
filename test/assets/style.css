@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@300&display=swap');
+*{
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior: smooth !important;
+  background-color:#EAC696;
+  color:#765827 ;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.header{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-family: 'Khand', sans-serif;
+}
+main{
+  display: flex;
+  padding-top: 95px;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+.joystick{
+  width: 55px;
+}
+.tulisanheader{
+  display: flex;
+  font-size: 35px;
+  color: #65451F;
+  font-weight: bold;
+  font-family: 'Khand', sans-serif;
+  align-items: center;
+}
+.container{
+  background-color: #C8AE7D;
+  display: flex;
+  align-items: center;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px;
+}
+.brand{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.nav
+{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.nav>li{
+  list-style-type: none;
+  padding: 15px;
+}
+.nav>li>a{
+  color:#65451F;
+  font-size: 25px;
+  text-decoration: none;
+}
+.nav li a:hover,.nav li a:focus{
+  font-weight: bold;
+  transition-delay: 0.15s;
+}
+.ancortag{
+  display: inline-block;
+  padding: 50px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 20px;
+} 
+.cntrtxt{padding-left: 3px;}
+.img-article{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+#content{
+  display: flex;
+}
+.cardprofile{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+.my-profile-picture{
+  width: 100px;
+  border-radius: 15%;
+}
+.my-profile{
+  font-family: 'Dai Banna SIL', serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+  aside {
+      display: flex;
+      max-width: 170px;
+      max-height: 350px;
+      margin: 30px;
+    }
+    
+    footer {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      justify-content: center;
+      background: #C8AE7D;
+      height: 155px;
+    }
+    @media screen and (max-width:800px){
+      .nav{
+      display: none;
+      padding-top: 55px;}
+    }
+
+    @media screen and (max-width:1000px){
+      #content,aside{
+        width: 100%; 
+        justify-self: center;
+        justify-content: center;
+        .cntrtxt{text-decoration: none;list-style-type: none;}
+      }
+
+    }
+    @media screen and (max-width: 1200px) {
+      main {
+        flex-flow: column nowrap;
+        padding-top: 95px;
+      }
+      main aside {
+        margin: 25px;
+        align-self: center;
+        text-align: center;
+      }
+      aside{
+      max-width: 170px;
+      max-height: 400px;
+      }
+      .cntrtxt{text-decoration: none;list-style-type: none;}
+      foooter{
+        margin-top: 20px;
+      }
+    }
+    @media screen and (min-width: 1800px){
+      article>h2{
+        font-size: 30px;
+      }
+      article>p{
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 340px) {
+    footer{display: none;}
+    }
+    .text-footer{
+      font-size: 23px;
+      padding-top: 25px;
+    }
+    .social-media{
+      display: inline-flex;
+    }
+    .social-media .icon{
+      margin: 0 20px;
+      text-align: center;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .social-media .icon span{
+      display: block;
+      height: 50px;
+      width: 50px;
+      background: #EAC696;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .social-media .icon span i{
+      line-height: 50px;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    .social-mediar .icon:hover span{
+      color: #C8AE7D;
+    }
+    .social-media .icon:hover span,{
+      text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    }
+    .social-media .facebook:hover span,
+    .social-media .facebook:hover:before{
+      background: #3B5999;
+    }
+    .social-media .twitter:hover span,
+    .social-media .twitter:hover:before{
+      background: #46C1F6;
+    }
+    .social-media .instagram:hover span,
+    .social-media .instagram:hover:before{
+      background: #e1306c;
+    }
+    .social-media .youtube:hover span,
+    .social-media .youtube:hover:before{
+      background: #DE463B;
+    }
+    .icon{
+      color: #65451F;
+    }
